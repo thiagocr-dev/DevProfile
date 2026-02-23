@@ -1,0 +1,12 @@
+.wrapper{
+    min-height: 100vh;
+}
+
+.container{
+    display: flex;
+    }
+
+.main{
+    padding: 20px;
+    background-color: #111827;
+}
