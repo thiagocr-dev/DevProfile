@@ -15,6 +15,7 @@ function App() {
         <Route path='/dev/:username' element={<DevProfile/>} />
         <Route path='/dev/crear' element={<CreateDev/>} />
         <Route path='/profile/:id' element={<Profile/>} />
+        <Route path='*' element={<h1>404 - Página no encontrada</h1>} />
       </Route>
     </Routes>
   )
