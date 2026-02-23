@@ -4,11 +4,11 @@ import './Sidebar.css'
 function Sidebar() {
     return (
         <aside className='sidebar'>
-            <NavLink to='/' >
+            <NavLink className="sidebar__link" to='/' >
                 Home
             </NavLink>
 
-            <NavLink to='/crear' >
+            <NavLink className="sidebar__link" to='/crear' >
                 Crear Perfil
             </NavLink>
         </aside>
