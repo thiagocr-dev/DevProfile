@@ -1,34 +1,11 @@
-import { use } from "react"
 import "./Home.css"
+import { use } from "react"
 import { useNavigate } from "react-router"
+import developers from "../data/developers"
 
 function Home(){
 
     const navigate = useNavigate()
-
-    const developers = [
-            {
-                id: 1,
-                name: "Juan Pérez",
-                role: "Frontend Developer",
-                tech: ["React", "JavaScript", "CSS"],
-                avatar: "https://randomuser.me/api/portraits/men/1.jpg"
-            },
-            {
-                id: 2,
-                name: "María López",
-                role: "Backend Developer",
-                tech: ["Node.js", "Express", "MongoDB"],
-                avatar: "https://randomuser.me/api/portraits/women/2.jpg"
-            },
-            {
-                id: 3,
-                name: "Mati Profe",
-                role: "Full Stack Developer",
-                tech: ["Angular", "JavaScript", "CSS"],
-                avatar: "https://randomuser.me/api/portraits/men/3.jpg"
-            }
-    ]
     return(
 
         <div className="home__container">
