@@ -11,7 +11,6 @@ import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 
 
-
 const iconMap = {
     "React": <FaReact />,
     "JavaScript": <IoLogoJavascript />,
@@ -23,7 +22,11 @@ const iconMap = {
     "Python": <FaPython />,
     "TypeScript": <SiTypescript />,
     "Express": <SiExpress />,
-    "MongoDB": <SiMongodb />
+    "MongoDB": <SiMongodb />,
+    "C++": <FaCPlusPlus />,
+    "C#": <FaCSharp />,
+    "php": <FaPhp />,
+    "Swift": <FaSwift />
 }
 
 

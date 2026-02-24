@@ -22,6 +22,14 @@ const developers = [
                 tech: ["Angular", "JavaScript", "TypeScript"],
                 avatar: "https://randomuser.me/api/portraits/men/3.jpg",
                 bio: "Full stack developer enfocado en soluciones complejas y eficientes"
+            },
+            {
+                id: 4,
+                name: "Juan Perez",
+                role: "Game Developer",
+                tech: ["C++", "C#", "php"],
+                avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+                bio: "Full stack developer enfocado en soluciones complejas y eficientes"
             }
 ]
 

@@ -8,15 +8,29 @@ import DeveloperCard from "../components/DeveloperCard/DeveloperCard"
 function Home(){
 
     const [search, setSearch] = useState("")
+    const [selectedTech, setSelectedTech] = useState("Todos");
+    const techFilters = ["Todos", "React", "JavaScript", "CSS", "HTML", "Angular", "Vue", "Node.js", "Python", "TypeScript", "Express", "MongoDB", "C++", "C#", "Python", "php", "Swift" ] // falta importar valor, por ahora asi;
 
-    const filteredDevelopers = developers.filter(dev => 
-        dev.name.toLowerCase().includes(search.toLowerCase())
-        ||
-        dev.role.toLowerCase().includes(search.toLowerCase())
-        ||
-        dev.tech.some(tech => tech.toLowerCase().includes(search.toLowerCase()))
-    )
+    const filteredDevelopers = 
+    developers.filter(dev => {
+        const searchLower = search.toLowerCase();
+
+        const MatchSearch =
+            dev.name.toLowerCase().includes(searchLower)
+            ||
+            dev.role.toLowerCase().includes(searchLower)
+            ||
+                dev.tech.some(tech => 
+                tech.toLowerCase().includes(searchLower)
+            )
+        const matchTech = 
+            selectedTech === "Todos" 
+            || 
+            dev.tech.includes(selectedTech);
+            return matchTech && MatchSearch
+        })
     
+
     return(
     
         <div className="home__container">
@@ -32,6 +46,20 @@ function Home(){
                 onChange={(e) => setSearch(e.target.value)}
                 className="search-input"
             />
+
+            <div className="tech-filter">
+                {techFilters.map((tech, index) => (
+                    <button
+                        key={index}
+                        className={`tech-filter-btn ${selectedTech === tech 
+                            ? "active" 
+                            : ""}`}
+                        onClick={() => setSelectedTech(tech)}
+                    >
+                        {tech}
+                    </button>
+                ))}
+            </div>
 
             <div className="cards-container">
                 {filteredDevelopers.length > 0 ? (
