@@ -9,7 +9,8 @@ function Home(){
 
     const [search, setSearch] = useState("")
     const [selectedTech, setSelectedTech] = useState("Todos");
-    const techFilters = ["Todos", "React", "JavaScript", "CSS", "HTML", "Angular", "Vue", "Node.js", "Python", "TypeScript", "Express", "MongoDB", "C++", "C#", "Python", "php", "Swift" ] // falta importar valor, por ahora asi;
+    /* const techFilters = ["Todos", "React", "JavaScript", "CSS", "HTML", "Angular", "Vue", "Node.js", "Python", "TypeScript", "Express", "MongoDB", "C++", "C#", "php", "Swift" ] // falta importar valor, por ahora asi; */
+    const allTechs = ["Todos", ...new Set(developers.flatMap(dev => dev.tech))]
 
     const filteredDevelopers = 
     developers.filter(dev => {
@@ -48,7 +49,7 @@ function Home(){
             />
 
             <div className="tech-filter">
-                {techFilters.map((tech, index) => (
+                {allTechs.map((tech, index) => (
                     <button
                         key={index}
                         className={`tech-filter-btn ${selectedTech === tech 
