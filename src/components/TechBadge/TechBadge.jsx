@@ -22,11 +22,6 @@ const iconMap = {
     "Python": <FaPython />,
     "TypeScript": <SiTypescript />,
     "Express": <SiExpress />,
-    "MongoDB": <SiMongodb />,
-    "C++": <FaCPlusPlus />,
-    "C#": <FaCSharp />,
-    "php": <FaPhp />,
-    "Swift": <FaSwift />
 }
 
 
