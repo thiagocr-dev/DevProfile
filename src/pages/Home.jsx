@@ -10,10 +10,15 @@ function Home(){
     const [search, setSearch] = useState("")
 
     const filteredDevelopers = developers.filter(dev => 
-                dev.name.toLowerCase().includes(search.toLowerCase()))
-
+        dev.name.toLowerCase().includes(search.toLowerCase())
+        ||
+        dev.role.toLowerCase().includes(search.toLowerCase())
+        ||
+        dev.tech.some(tech => tech.toLowerCase().includes(search.toLowerCase()))
+    )
+    
     return(
-
+    
         <div className="home__container">
             <section className="home__leyend">
                 <h1 className="title">Descubre desarrolladores</h1>
@@ -31,8 +36,8 @@ function Home(){
             <div className="cards-container">
                 {filteredDevelopers.length > 0 ? (
                     filteredDevelopers.map((dev) => (
-                    <DeveloperCard key={dev.id} developer={dev} />
-                ))
+                        <DeveloperCard key={dev.id} developer={dev} />
+                    ))
                 ) : (
                     <p className="no-results">No se encontraron desarrolladores</p>
                 )}
