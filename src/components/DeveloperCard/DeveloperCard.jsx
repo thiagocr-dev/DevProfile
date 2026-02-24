@@ -10,7 +10,7 @@ function DeveloperCard({developer}) {
                 alt={developer.name} 
                 className="avatar"
             />
-            <h3>{developer.name}</h3>
+            <h3 className="name">{developer.name}</h3>
             <p className='role'>{developer.role}</p>
                     
             <div className="tech-badges">
