@@ -19,7 +19,7 @@ const developers = [
                 id: 3,
                 name: "Mati Profe",
                 role: "Full Stack Developer",
-                tech: ["Angular", "JavaScript", "CSS"],
+                tech: ["Angular", "JavaScript", "TypeScript"],
                 avatar: "https://randomuser.me/api/portraits/men/3.jpg",
                 bio: "Full stack developer enfocado en soluciones complejas y eficientes"
             }

@@ -1,6 +1,7 @@
 import './Profile.css'
 import { useParams, useNavigate } from 'react-router'
 import developers from '../data/developers'
+import TechBadge from '../components/TechBadge/TechBadge'
 
 function Profile() {
     const {id} = useParams()
@@ -29,7 +30,11 @@ function Profile() {
                 <h1>{developer.name}</h1>
                 <h3 className='role'>{developer.role}</h3>
                 <p className='bio'>{developer.bio}</p>
-                <p className='tech'>Tecnologías: {developer.tech.join(", ")}</p> {/* puede mejorar, separar cada tecnologia individualmente  */}
+                <div className='tech'>
+                    {developer.tech.map((tech, index) => (
+                        <TechBadge key={index} tech={tech} />
+                    ))}
+                </div>
             </div>
         </div>
     )

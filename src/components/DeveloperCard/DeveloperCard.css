@@ -1,0 +1,55 @@
+.card{
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    object-fit: cover;
+}
+
+.role{
+    font-weight: 600;
+}
+
+.tech-badges{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 14px 0;
+}
+
+.tech{
+    opacity: 0.7;
+    font-size: 14px;
+    gap: 10px
+}
+
+.profile-btn{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    margin-top: 12px;
+    padding: 4px 10px;
+    text-decoration: none;
+    width: 200px;
+}
+
+.profile-btn:hover{
+    background: #ffcaca23;
+}

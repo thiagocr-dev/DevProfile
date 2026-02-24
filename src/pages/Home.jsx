@@ -2,6 +2,7 @@ import "./Home.css"
 import { use } from "react"
 import { useNavigate } from "react-router"
 import developers from "../data/developers"
+import DeveloperCard from "../components/DeveloperCard/DeveloperCard"
 
 function Home(){
 
@@ -16,13 +17,7 @@ function Home(){
 
             <div className="cards-container">
                 {developers.map(dev => (
-                    <div key={dev.id} className="card">
-                    <img src={dev.avatar} alt={dev.name} className="avatar"/>
-                    <h3>{dev.name}</h3>
-                    <p className="role">{dev.role}</p>
-                    <p className="tech">{dev.tech.join(", ")}</p>
-                    <button className="profile-btn" onClick={() => navigate(`/profile/${dev.id}`)}>Ver Perfil</button>
-                    </div>
+                    <DeveloperCard key={dev.id} developer={dev} />
                 ))}</div>
             </div>
     )
