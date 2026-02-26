@@ -37,7 +37,7 @@
 .tech-filter{
     display: flex;
     gap: 12px;
-    margin-bottom: 20px;
+    margin-bottom: 36px;
     flex-wrap: wrap;
 }
 
@@ -48,13 +48,18 @@
     color: white;
     cursor: pointer;
     padding: 10px 16px;
-    transition: 0.3s ease;
+    transition: all 0.3s ease;
+    transform: scale(1);
 }
 
 .tech-filter-btn:hover{
     background-color: #444;
+    transform: scale(1.05);
+    transform: translateY(-5px)
 }
 
 .tech-filter-btn.active{
     background-color: #007bff;
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(100, 108, 255, 0.4);
 }
