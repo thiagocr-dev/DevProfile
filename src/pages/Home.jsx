@@ -60,17 +60,17 @@ function Home(){
                     </button>
                 ))}
             </div>
-
-            <div className="cards-container">
-                {filteredDevelopers.length > 0 ? (
-                    filteredDevelopers.map((dev) => (
-                        <DeveloperCard key={dev.id} developer={dev} />
-                    ))
-                ) : (
-                    <p className="no-results">No se encontraron desarrolladores</p>
-                )}
+            
+                <div className="cards-container">
+                    {filteredDevelopers.length > 0 ? (
+                        filteredDevelopers.map((dev) => (
+                            <DeveloperCard key={dev.id} developer={dev} />
+                        ))
+                    ) : (
+                        <p className="no-results">No se encontraron desarrolladores</p>
+                    )}
+                </div>
             </div>
-        </div>
     )
 }
 

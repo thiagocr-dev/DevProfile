@@ -26,23 +26,53 @@
     border-radius: 20px;
     padding: 20px;
     text-align: center;
-    width: 100%;
     max-width: 600px;
+    width: 100%;
 }
 
 .role{
-    opacity: 0.8;
     margin-bottom: 8px;
+    opacity: 0.8;
 }
 
 .bio{
-    opacity: 0.9;
     margin-bottom: 16px;
+    opacity: 0.9;
 }
 
 .tech{
     display: flex;
+    font-size: 18px;
     gap: 10px;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+.profile__metrics{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.metric {
+    background: #1e1e2f;
+    border-radius: 12px;
+    min-width: 120px;
+    padding: 16px;
+    text-align: center;
+}
+
+.metric h3{
+    font-size: 18px;
+}
+
+.cv-btn{
+    background-color: #646cff85;
+    border-radius: 8px;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 14px;
+    text-decoration: none;
 }

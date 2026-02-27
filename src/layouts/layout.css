@@ -1,11 +1,14 @@
 .wrapper{
     min-height: 100vh;
-    background-color: #111827
+    background-color: #111827;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 32px;
 }
 
 .container{
     display: flex;
-    }
+}
 
 .main{
     padding: 0 50px;
