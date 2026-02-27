@@ -48,31 +48,8 @@
     margin-bottom: 20px;
 }
 
-.profile__metrics{
+.profile__metrics-section{
     display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    margin-top: 24px;
-}
-
-.metric {
-    background: #1e1e2f;
-    border-radius: 12px;
-    min-width: 120px;
-    padding: 16px;
-    text-align: center;
-}
-
-.metric h3{
-    font-size: 18px;
-}
-
-.cv-btn{
-    background-color: #646cff85;
-    border-radius: 8px;
-    color: white;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 8px 14px;
-    text-decoration: none;
+    flex-direction: column;
+    gap: 40px;
 }

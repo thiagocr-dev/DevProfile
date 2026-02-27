@@ -9,7 +9,7 @@ function Home(){
 
     const [search, setSearch] = useState("")
     const [selectedTech, setSelectedTech] = useState("Todos");
-    const allTechs = ["Todos", ...new Set(developers.flatMap(dev => dev.tech))]
+    const allTechs = ["Todos", ...new Set(developers.flatMap(dev => dev.tech.map(t => t.name)))]
 
     const filteredDevelopers = 
     developers.filter(dev => {
@@ -21,12 +21,12 @@ function Home(){
             dev.role.toLowerCase().includes(searchLower)
             ||
                 dev.tech.some(tech => 
-                tech.toLowerCase().includes(searchLower)
+                tech.name.toLowerCase().includes(searchLower)
             )
         const matchTech = 
             selectedTech === "Todos" 
             || 
-            dev.tech.includes(selectedTech);
+            dev.tech.some(t => t.name === selectedTech);
             return matchTech && MatchSearch
         })
     

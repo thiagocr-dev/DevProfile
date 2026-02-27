@@ -1,0 +1,15 @@
+.metrics__card{
+    background-color: #1f2937;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.metric {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.metrics__card h3{
+    margin-bottom: 16px;
+}

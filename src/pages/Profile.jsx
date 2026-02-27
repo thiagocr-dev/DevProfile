@@ -2,6 +2,9 @@ import './Profile.css'
 import { useParams, useNavigate, Link } from 'react-router'
 import developers from '../data/developers'
 import TechBadge from '../components/TechBadge/TechBadge'
+import ProfileMetrics from '../components/ProfileMetrics/ProfileMetrics'
+import DeveloperCard from '../components/DeveloperCard/DeveloperCard'
+import TechChart from '../components/TechChart/TechChart'
 
 function Profile() {
     const {id} = useParams()
@@ -21,52 +24,21 @@ function Profile() {
         <div className="profile__container">
             <button className="back-btn" onClick={() => navigate(-1)}>Volver</button>
             <div className="profile__card">
-                <img 
-                    src={developer.avatar}
-                    alt={developer.name}
-                    className='avatar'
-                />
+                    <DeveloperCard developer={developer}/>
+                    {/*  <Link to={developer.cv}
+                        download={developer.cv} 
+                        className='cv-btn'
+                    >
+                        Descargar CV
+                    </Link> */}
+                </div> 
 
-                <h1>{developer.name}</h1>
-                <h3 className='role'>{developer.role}</h3>
-                <p className='bio'>{developer.bio}</p>
-                <div className='tech'>
-                    {developer.tech.map((tech, index) => (
-                        <TechBadge key={index} tech={tech} />
-                    ))}
+
+                <div className='profile-metrics-section'>
+                    <TechChart tech={developer.tech} />
+                    <ProfileMetrics developer={developer} />
                 </div>
-
-                <div className="profile__metrics">
-                    <div className='metric'>
-                        <h3>{developer.metrics.experience_years}+</h3>
-                        <p>Años de experiencia</p>
-                    </div>
-
-                    <div className='metric'>
-                        <h3>{developer.metrics.projects_completed}</h3>
-                        <p>Proyectos</p>
-                    </div>
-
-                    <div className='metric'>
-                        <h3>{developer.metrics.repositories}</h3>
-                        <p>Repositorios</p>
-                    </div>
-
-                    <div className='metric'>
-                        <h3>{developer.metrics.english_level}</h3>
-                        <p>Nivel de ingles</p>
-                    </div>
-                </div>
-            
-                <Link 
-                    to={developer.cv}
-                    download={developer.cv} 
-                    className='cv-btn'
-                >
-                    Descargar CV
-                </Link>
             </div>
-        </div>
     )
 }
 

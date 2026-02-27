@@ -34,7 +34,7 @@ const iconMap = {
 function TechBadge({tech}){
     return (
         <span className="badge">
-            {iconMap[tech]} {tech}
+            {iconMap[tech.name]} {tech.name}
         </span>
     )
 }

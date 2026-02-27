@@ -3,7 +3,11 @@ const developers = [
                 id: 1,
                 name: "Thiago Colombo Russell",
                 role: "Frontend Developer",
-                tech: ["React", "JavaScript", "CSS"],
+                tech: [
+                    {name:"React", level:80 },
+                    {name:"JavaScript", level: 75},
+                    {name: "CSS", level: 70}
+                ],
                 avatar: "https://randomuser.me/api/portraits/men/1.jpg",
                 bio: "Desarrollador apasionado por crear interfaces modernas y experiencia de usuario atractivas",
                 metrics: {
@@ -18,7 +22,11 @@ const developers = [
                 id: 2,
                 name: "María López",
                 role: "Backend Developer",
-                tech: ["Node.js", "Express", "MongoDB"],
+                tech: [
+                    {name: "Node.js", level: 90},
+                    {name: "Express", level: 85},
+                    {name: "MongoDB", level: 80}
+                ],
                 avatar: "https://randomuser.me/api/portraits/women/2.jpg",
                 bio: "Especialista en arquitecturas, backend y APIs escalables",
                 metrics: {
@@ -33,7 +41,11 @@ const developers = [
                 id: 3,
                 name: "Mati Profe",
                 role: "Full Stack Developer",
-                tech: ["Angular", "JavaScript", "TypeScript"],
+                tech: [
+                    {name: "Angular", level: 85},
+                    {name: "JavaScript", level: 85},
+                    {name: "TypeScript", level: 75}
+                ],
                 avatar: "https://randomuser.me/api/portraits/men/3.jpg",
                 bio: "Full stack developer enfocado en soluciones complejas y eficientes",
                 metrics: {
@@ -48,7 +60,11 @@ const developers = [
                 id: 4,
                 name: "Juan Perez",
                 role: "Game Developer",
-                tech: ["C++", "C#", "php"],
+                tech: [
+                    {name: "C++", level: 80},
+                    {name: "C#", level: 75},
+                    {name: "php", level: 65}
+                ],
                 avatar: "https://randomuser.me/api/portraits/men/4.jpg",
                 bio: "Ingeniero de software especializado en crear, programar y optimizar sistemas de videojuegos",
                 metrics: {
