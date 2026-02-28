@@ -7,23 +7,23 @@ function ProfileMetrics({ developer }) {
             <h3>Estadísticas</h3>
 
             <div className='metric'>
-                <h3>{developer.metrics.experience_years}+</h3>
                 <p>Años de experiencia</p>
+                <h3>+{developer.metrics.experience_years}</h3>
             </div>
 
             <div className='metric'>
-                <h3>{developer.metrics.projects_completed}</h3>
                 <p>Proyectos</p>
+                <h3>{developer.metrics.projects_completed}</h3>
             </div>
 
             <div className='metric'>
-                <h3>{developer.metrics.repositories}</h3>
                 <p>Repositorios</p>
+                <h3>{developer.metrics.repositories}</h3>
             </div>
 
             <div className='metric'>
-                <h3>{developer.metrics.english_level}</h3>
                 <p>Nivel de ingles</p>
+                <h3>{developer.metrics.english_level}</h3>
             </div>
         </div>
     )

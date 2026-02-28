@@ -74,6 +74,101 @@ const developers = [
                     english_level: "Intermedio",
                 },
                 cv: "/cv-juan.pdf"
+            },
+            {
+                id: 5,
+                name: "Juan Perez",
+                role: "Game Developer",
+                tech: [
+                    {name: "C++", level: 80},
+                    {name: "C#", level: 75},
+                    {name: "php", level: 65}
+                ],
+                avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+                bio: "Ingeniero de software especializado en crear, programar y optimizar sistemas de videojuegos",
+                metrics: {
+                    experience_years: 2,
+                    projects_completed: 4,
+                    repositories: 1,
+                    english_level: "Intermedio",
+                },
+                cv: "/cv-juan.pdf"
+            },
+            {
+                id: 6,
+                name: "Juan Perez",
+                role: "Game Developer",
+                tech: [
+                    {name: "C++", level: 80},
+                    {name: "C#", level: 75},
+                    {name: "php", level: 65}
+                ],
+                avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+                bio: "Ingeniero de software especializado en crear, programar y optimizar sistemas de videojuegos",
+                metrics: {
+                    experience_years: 2,
+                    projects_completed: 4,
+                    repositories: 1,
+                    english_level: "Intermedio",
+                },
+                cv: "/cv-juan.pdf"
+            },
+            {
+                id: 7,
+                name: "Juan Perez",
+                role: "Game Developer",
+                tech: [
+                    {name: "C++", level: 80},
+                    {name: "C#", level: 75},
+                    {name: "php", level: 65}
+                ],
+                avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+                bio: "Ingeniero de software especializado en crear, programar y optimizar sistemas de videojuegos",
+                metrics: {
+                    experience_years: 2,
+                    projects_completed: 4,
+                    repositories: 1,
+                    english_level: "Intermedio",
+                },
+                cv: "/cv-juan.pdf"
+            },
+            {
+                id: 8,
+                name: "Juan Perez",
+                role: "Game Developer",
+                tech: [
+                    {name: "C++", level: 80},
+                    {name: "C#", level: 75},
+                    {name: "php", level: 65}
+                ],
+                avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+                bio: "Ingeniero de software especializado en crear, programar y optimizar sistemas de videojuegos",
+                metrics: {
+                    experience_years: 2,
+                    projects_completed: 4,
+                    repositories: 1,
+                    english_level: "Intermedio",
+                },
+                cv: "/cv-juan.pdf"
+            },
+            {
+                id: 9,
+                name: "Juan Perez",
+                role: "Game Developer",
+                tech: [
+                    {name: "C++", level: 80},
+                    {name: "C#", level: 75},
+                    {name: "php", level: 65}
+                ],
+                avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+                bio: "Ingeniero de software especializado en crear, programar y optimizar sistemas de videojuegos",
+                metrics: {
+                    experience_years: 2,
+                    projects_completed: 4,
+                    repositories: 1,
+                    english_level: "Intermedio",
+                },
+                cv: "/cv-juan.pdf"
             }
 ]
 

@@ -21,24 +21,24 @@ function Profile() {
     }
 
     return (
-        <div className="profile__container">
+        <div>
             <button className="back-btn" onClick={() => navigate(-1)}>Volver</button>
-            <div className="profile__card">
-                    <DeveloperCard developer={developer}/>
-                    {/*  <Link to={developer.cv}
-                        download={developer.cv} 
-                        className='cv-btn'
-                    >
-                        Descargar CV
-                    </Link> */}
-                </div> 
+                <div className="profile__container">
+                    <div className="left-column">
+                        <DeveloperCard developer={developer}/>
+                        <Link to={developer.cv}
+                            download={developer.cv} 
+                            className='cv-btn'>
+                            Descargar CV
+                        </Link>
+                    </div> 
 
-
-                <div className='profile-metrics-section'>
-                    <TechChart tech={developer.tech} />
-                    <ProfileMetrics developer={developer} />
+                    <div className='right-column'>
+                        <TechChart tech={developer.tech} />
+                        <ProfileMetrics developer={developer} />
+                    </div>
                 </div>
-            </div>
+        </div>
     )
 }
 

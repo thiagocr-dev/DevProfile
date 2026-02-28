@@ -19,7 +19,7 @@ function TechChart({tech}) {
                         <div className='bar-fill'
                             style={{width: `${item.level}%`}}>
                         </div>
-                </div>
+                    </div>
         </div>
         ))}
         </div>
