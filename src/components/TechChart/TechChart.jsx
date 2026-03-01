@@ -12,8 +12,7 @@ function TechChart({tech}) {
             {tech.map((item, index) => (
                 <div key={index} 
                     className="tech-items">
-                    <span>{item.name}</span>
-                    <span>{item.level}%</span>
+                    <span>{item.name} {item.level}%</span>
                     
                     <div className="tech-level">
                         <div className='bar-fill'
