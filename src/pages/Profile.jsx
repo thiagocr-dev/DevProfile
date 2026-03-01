@@ -1,6 +1,6 @@
 import './Profile.css'
 import { useParams, useNavigate} from 'react-router'
-import developers from '../data/developers'
+import { useDevelopers } from '../context/DevelopersContext'
 import ProfileMetrics from '../components/ProfileMetrics/ProfileMetrics'
 import TechChart from '../components/TechChart/TechChart'
 import DeveloperCardProfile from '../components/DeveloperCardProfile/DeveloperCardProfile'
@@ -8,8 +8,9 @@ import DeveloperCardProfile from '../components/DeveloperCardProfile/DeveloperCa
 function Profile() {
     const {id} = useParams()
     const navigate = useNavigate()
+    const { devs } = useDevelopers()
 
-    const developer = developers.find(dev => dev.id === parseInt(id))
+    const developer = devs.find(dev => dev.id === parseInt(id))
 
     if (!developer) {
         return (

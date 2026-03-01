@@ -7,13 +7,14 @@
 .profile__container{
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    gap: 40px; /* espacio vertical en móvil */
 }
 
 @media (min-width: 992px) {
     .profile__container {
         flex-direction: row;
         align-items: flex-start;
+        column-gap: 60px; /* espacio horizontal entre columnas */
     }
 }
 
@@ -45,7 +46,7 @@
 
 .left-column{
     flex: 1;
-    min-width: 500px; 
+    min-width: 500px;
 }
 
 .cv-btn{

@@ -8,7 +8,7 @@ function Sidebar() {
                 Home
             </NavLink>
 
-            <NavLink className="sidebar__link" to='/crear' >
+            <NavLink className="sidebar__link" to='/dev/crear' >
                 Crear Perfil
             </NavLink>
         </aside>

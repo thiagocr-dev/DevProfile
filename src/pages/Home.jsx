@@ -1,18 +1,18 @@
 import "./Home.css"
-import { use } from "react"
-import { useNavigate } from "react-router"
 import { useState } from "react"
-import developers from "../data/developers"
 import DeveloperCard from "../components/DeveloperCard/DeveloperCard"
+import { useDevelopers } from "../context/DevelopersContext"
 
-function Home(){
 
+function Home({profiles}){
+
+    const { devs } = useDevelopers()
     const [search, setSearch] = useState("")
     const [selectedTech, setSelectedTech] = useState("Todos");
-    const allTechs = ["Todos", ...new Set(developers.flatMap(dev => dev.tech.map(t => t.name)))]
+    const allTechs = ["Todos", ...new Set(devs.flatMap(dev => dev.tech.map(t => t.name)))]
 
     const filteredDevelopers = 
-    developers.filter(dev => {
+    devs.filter(dev => {
         const searchLower = search.toLowerCase();
 
         const MatchSearch =
@@ -30,7 +30,6 @@ function Home(){
             return matchTech && MatchSearch
         })
     
-
     return(
     
         <div className="home__container">
@@ -38,7 +37,7 @@ function Home(){
                 <h1 className="title">Descubre desarrolladores</h1>
                 <p className="subtitle">Explora perfiles y conecta con talento tech</p>
             </section>
-                
+            
             <input 
                 type="text"
                 placeholder="Buscar desarrollador..."

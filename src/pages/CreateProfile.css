@@ -1,0 +1,242 @@
+.create-profile__container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.create-profile__container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+.form-group input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background-color: #1e293b;
+    color: white;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.3);
+}
+
+.form-group input::placeholder {
+    color: #94a3b8;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(6, 182, 212, 0.5);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Estilos para agrupación de tecnologías */
+.tech-input-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.tech-input-group input[type="text"] {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background-color: #1e293b;
+    color: white;
+    font-size: 14px;
+}
+
+.level-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.level-input input[type="range"] {
+    width: 100px;
+    cursor: pointer;
+}
+
+.level-display {
+    min-width: 40px;
+    color: #06b6d4;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.add-tech-btn {
+    background: #06b6d4;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.add-tech-btn:hover {
+    background: #0891b2;
+}
+
+.tech-list {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: rgba(6, 182, 212, 0.1);
+    border-radius: 6px;
+    border: 1px solid #0891b2;
+}
+
+.tech-list h4 {
+    margin: 0 0 10px 0;
+    color: #06b6d4;
+    font-size: 14px;
+}
+
+.tech-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #e2e8f0;
+}
+
+.tech-item span {
+    font-weight: 500;
+}
+
+.remove-tech-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.remove-tech-btn:hover {
+    background: #dc2626;
+}
+
+.metrics-fieldset {
+    border: 1px solid #475569;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px 0;
+    background-color: rgba(6, 182, 212, 0.05);
+}
+
+.metrics-fieldset legend {
+    color: #06b6d4;
+    font-weight: 600;
+    padding: 0 8px;
+    font-size: 14px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: start;
+}
+
+.form-row .form-group {
+    height: 100%;
+}
+
+.form-row .form-group input,
+.form-row .form-group select {
+    height: 52px;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.form-group select {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background-color: #1e293b;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.3);
+}
+
+.form-group input[type="number"] {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #475569;
+    background-color: #1e293b;
+    color: white;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="number"]:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.3);
+}
