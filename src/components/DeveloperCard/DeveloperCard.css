@@ -8,6 +8,7 @@
     transition: all 0.2s ease;
     flex: 1 1 280px;
     max-width: 600px;
+    min-width: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -63,4 +64,29 @@
 .profile-btn:hover{
     background: #e2e8f0;
     color: #1e293b;
+}
+
+@media (max-width: 620px) {
+    .card {
+        padding: 12px;
+        white-space: normal; 
+    }
+
+    .name {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .role {
+        font-size: 14px;
+    }
+
+    .tech-badges {
+        gap: 6px;
+        margin: 16px 0;
+    }
+
+    .tech {
+        font-size: 12px;
+    }
 }
