@@ -42,6 +42,23 @@ function CreateProfile() {
             return
         }
 
+        if(experienceYears < 0){
+            alert("Por favor ingrese una experiencia válida");
+            return;
+        }
+        if(completedProjects < 0){
+            alert("Por favor ingrese una cantidad válida de proyectos completados");
+            return;
+        }
+        if(repositories < 0){
+            alert("Por favor ingrese una cantidad válida de repositorios");
+            return;
+        }
+        if(!englishLevel){
+            alert("Por favor selecciona un nivel de inglés válido");
+            return;
+        }
+        
         addDeveloper(
             newName, 
             newRole, 
