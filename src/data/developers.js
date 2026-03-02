@@ -16,7 +16,7 @@ const developers = [
             repositories: 1,
             english_level: "Intermedio",
         },
-        cv: "/cv-thiago.pdf"
+        cv: "/cv-thiago-colombo-russell.pdf"
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const developers = [
             repositories: 3,
             english_level: "Avanzado",
         },
-        cv: "/cv-maria.pdf"
+        cv: "/cv-mar-a-l-pez.pdf"
     },
     {
         id: 3,
@@ -54,7 +54,7 @@ const developers = [
             repositories: 2,
             english_level: "Intermedio",
         },
-        cv: `/cv-mati.pdf`
+        cv: "/cv-mati-profe.pdf"
     },
     {
         id: 4,
@@ -73,7 +73,7 @@ const developers = [
             repositories: 1,
             english_level: "Intermedio",
         },
-        cv: "/cv-juan.pdf"
+        cv: "/cv-juan-perez.pdf"
     },
     {
         id: 5,
@@ -92,7 +92,7 @@ const developers = [
             repositories: 5,
             english_level: "Avanzado",
         },
-        cv: "/cv-carlos.pdf"
+        cv: "/cv-carlos-ruiz.pdf"
     },
     {
         id: 6,
@@ -111,7 +111,7 @@ const developers = [
             repositories: 8,
             english_level: "Fluido",
         },
-        cv: "/cv-laura.pdf"
+        cv: "/cv-laura-mart-nez.pdf"
     },
     {
         id: 7,
@@ -130,7 +130,7 @@ const developers = [
             repositories: 3,
             english_level: "Intermedio",
         },
-        cv: "/cv-diego.pdf"
+        cv: "/cv-diego-fern-ndez.pdf"
     },
     {
         id: 8,
@@ -149,7 +149,7 @@ const developers = [
             repositories: 2,
             english_level: "Avanzado",
         },
-        cv: "/cv-sofia.pdf"
+        cv: "/cv-sofia-garc-a.pdf"
     },
     {
         id: 9,
@@ -168,7 +168,7 @@ const developers = [
             repositories: 6,
             english_level: "Avanzado",
         },
-        cv: "/cv-pablo.pdf"
+        cv: "/cv-pablo-g-mez.pdf"
     },
     {
         id: 10,
@@ -187,7 +187,7 @@ const developers = [
             repositories: 4,
             english_level: "Fluido",
         },
-        cv: "/cv-emma.pdf"
+        cv: "/cv-emma-wilson.pdf"
     },
     {
         id: 11,
@@ -206,7 +206,7 @@ const developers = [
             repositories: 3,
             english_level: "Intermedio",
         },
-        cv: "/cv-miguel.pdf"
+        cv: "/cv-miguel-l-pez.pdf"
     },
     {
         id: 12,
@@ -225,7 +225,7 @@ const developers = [
             repositories: 7,
             english_level: "Avanzado",
         },
-        cv: "/cv-julieta.pdf"
+        cv: "/cv-julieta-rodr-guez.pdf"
     },
     {
         id: 13,
@@ -244,7 +244,7 @@ const developers = [
             repositories: 5,
             english_level: "Intermedio",
         },
-        cv: "/cv-andres.pdf"
+        cv: "/cv-andr-s-silva.pdf"
     },
     {
         id: 14,
@@ -263,7 +263,7 @@ const developers = [
             repositories: 3,
             english_level: "Avanzado",
         },
-        cv: "/cv-victoria.pdf"
+        cv: "/cv-victoria-santos.pdf"
     },
     {
         id: 15,
@@ -282,7 +282,7 @@ const developers = [
             repositories: 4,
             english_level: "Fluido",
         },
-        cv: "/cv-roberto.pdf"
+        cv: "/cv-roberto-hurtado.pdf"
     },
     {
         id: 16,
@@ -301,7 +301,7 @@ const developers = [
             repositories: 4,
             english_level: "Avanzado",
         },
-        cv: "/cv-catalina.pdf"
+        cv: "/cv-catalina-flores.pdf"
     },
     {
         id: 17,
@@ -320,7 +320,7 @@ const developers = [
             repositories: 9,
             english_level: "Fluido",
         },
-        cv: "/cv-luis.pdf"
+        cv: "/cv-luis-vargas.pdf"
     },
     {
         id: 18,
@@ -339,7 +339,7 @@ const developers = [
             repositories: 1,
             english_level: "Fluido",
         },
-        cv: "/cv-daniela.pdf"
+        cv: "/cv-daniela-cruz.pdf"
     },
     {
         id: 19,
@@ -358,7 +358,7 @@ const developers = [
             repositories: 8,
             english_level: "Avanzado",
         },
-        cv: "/cv-fernando.pdf"
+        cv: "/cv-fernando-rojas.pdf"
     },
     {
         id: 20,
@@ -377,7 +377,7 @@ const developers = [
             repositories: 6,
             english_level: "Avanzado",
         },
-        cv: "/cv-mariana.pdf"
+        cv: "/cv-mariana-sosa.pdf"
     },
     {
         id: 21,
@@ -396,7 +396,7 @@ const developers = [
             repositories: 5,
             english_level: "Intermedio",
         },
-        cv: "/cv-javier.pdf"
+        cv: "/cv-javier-ram-rez.pdf"
     },
     {
         id: 22,
@@ -415,7 +415,7 @@ const developers = [
             repositories: 10,
             english_level: "Avanzado",
         },
-        cv: "/cv-alejandra.pdf"
+        cv: "/cv-alejandra-mendoza.pdf"
     },
     {
         id: 23,
@@ -434,7 +434,7 @@ const developers = [
             repositories: 5,
             english_level: "Intermedio",
         },
-        cv: "/cv-ricardo.pdf"
+        cv: "/cv-ricardo-cort-s.pdf"
     }
 ]
 

@@ -32,6 +32,13 @@
     .cards-container .card { flex: 1 1 100%; max-width: 100%; }
 }
 
+@media (min-width: 320px) and (max-width: 743px) {
+    .cards-container{
+        justify-content: flex-start;
+    }
+}
+
+
 @media (min-width: 769px) and (max-width: 1200px) {
     .title { font-size: 44px; }
     .subtitle { font-size: 22px; }
