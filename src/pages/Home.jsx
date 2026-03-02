@@ -47,17 +47,19 @@ function Home({profiles}){
             />
 
             <div className="tech-filter">
-                {allTechs.map((tech, index) => (
-                    <button
-                        key={index}
-                        className={`tech-filter-btn ${selectedTech === tech 
-                            ? "active" 
-                            : ""}`}
-                        onClick={() => setSelectedTech(tech)}
-                    >
-                        {tech}
-                    </button>
-                ))}
+                <label htmlFor="tech-select" className="tech-filter-label">
+                    Filtrar por tecnología:
+                </label>
+                <select
+                    id="tech-select"
+                    value={selectedTech}
+                    onChange={e => setSelectedTech(e.target.value)}
+                    className="tech-filter-select"
+                >
+                    {allTechs.map((tech, index) => (
+                        <option key={index} value={tech}>{tech}</option>
+                    ))}
+                </select>
             </div>
             
                 <div className="cards-container">
