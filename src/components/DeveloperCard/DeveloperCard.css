@@ -6,7 +6,8 @@
     padding: 18px;
     text-align: center;
     transition: all 0.2s ease;
-    flex: 1 1 280px;
+    flex: 0 0 280px;
+    width: 280px;
     max-width: 600px;
     min-width: 0;
     white-space: nowrap;
@@ -69,7 +70,10 @@
 @media (max-width: 620px) {
     .card {
         padding: 12px;
-        white-space: normal; 
+        white-space: normal;
+        /* expand to fill available space */
+        flex: 1 1 100%;
+        width: 100%;
     }
 
     .name {

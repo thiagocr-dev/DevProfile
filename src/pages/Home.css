@@ -85,6 +85,39 @@
     margin-top: 20px;
 }
 
+.cards-container .card {
+    flex: 0 0 280px;
+    width: 280px;
+}
+
+@media (max-width: 480px) {
+    .cards-container .card {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .cards-container .card {
+        flex: 0 0 280px;
+        width: 280px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .cards-container .card {
+        flex: 0 0 300px;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .cards-container .card {
+        flex: 0 0 320px;
+        width: 320px;
+    }
+}
+
 .tech-filter{
     display: flex;
     flex-direction: column;
