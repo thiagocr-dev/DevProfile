@@ -38,9 +38,9 @@
     background-color: rgba(6,182,212,0.2);
 }
 
-@media (max-width: 420px) {
+@media (min-width:320px) and (max-width: 420px) {
     .navbar{
-        padding: 0px
+        padding: 10px
     }
 }
 
