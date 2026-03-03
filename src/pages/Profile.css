@@ -2,11 +2,17 @@
     .back-btn {
         visibility: hidden;
     }
+    .profile-wrapper{
+        padding: 20px 10px;
+    }
 }
 
 @media (min-width: 768px) {
     .back-btn {
         visibility: visible;
+    }
+    .profile-wrapper{
+        padding: 70px 32px;;
     }
 }
 
@@ -48,7 +54,6 @@
 
 .profile-wrapper {
     margin: 0 auto;
-    padding: 70px 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
