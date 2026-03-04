@@ -69,9 +69,11 @@ El formulario de creación de perfil incluye validaciones básicas:
 ---
 
 🔐 Autenticación
+
 El proyecto incluye un sistema de login simple implementado en el frontend utilizando estado global (Context API).
 
 ⚠️ No cuenta con backend ni base de datos.
+
 Las credenciales están simuladas para fines académicos.
 
 👤 Credenciales de prueba
