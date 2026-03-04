@@ -1,84 +1,123 @@
 .login-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 24px;
-    height: 100vh;
 }
 
 .login__card {
-    width: 100%;
+    width: 90%;
     max-width: 400px;
     padding: 32px;
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.05);    
+    background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
     .login__card {
+        padding: 40px;
+        width: 100%;
         max-width: 500px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .login__card {
-        max-width: 600px;
     }
 }
 
 @media (min-width: 1440px) {
     .login__card {
-        max-width: 700px;
+        max-width: 600px;
+        padding: 48px;
+    }
+
+    .login__card h2 {
+        font-size: 35px;
+    }
+
+    .login__card input,
+    .login__card button {
+        font-size: 19px;
+        padding: 18px;
     }
 }
 
-@media (min-width: 1920px) {
-    .login__card {
-        max-width: 800px;
+@media (min-width: 2500px) {
+    .login-container {
+        padding: 64px;
     }
-}
 
-@media (min-width: 1920px) {
     .login__card {
         max-width: 1000px;
+        padding: 64px;
+        border-radius: 24px;
+    }
+
+    .login__card h2 {
+        font-size: 56px;
+        margin-bottom: 32px;
+    }
+
+    .login__card input,
+    .login__card button {
+        font-size: 24px;
+        padding: 24px;
+        border-radius: 12px;
     }
 }
 
-.login__card h2{
+.login__card h2 {
     margin-bottom: 18px;
     color: white;
+    font-size: 32px;
+}
+
+.login__card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .login__card input {
     width: 100%;
     padding: 12px;
-    margin-bottom: 16px;
+    font-size: 16px;
     border-radius: 8px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
     outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.login__card input:focus {
+    border-color: #0ea5e9;
 }
 
 .login__card button {
     width: 100%;
-    padding: 12px;
-    margin-top: 16px;
+    padding: 14px;
+    font-size: 18px;
+    margin-top: 8px;
     border: none;
     border-radius: 4px;
     background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
     color: white;
     cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 .login__card button:hover {
     opacity: 0.9;
+    transform: translateY(-2px);
 }
 
-.login__card  a {
+.login__card a {
     display: inline-block;
     margin-top: 16px;
     color: #007bff;
@@ -86,73 +125,29 @@
     text-align: center;
 }
 
-@media (max-width: 767px) {
-    .login__card {
-        padding: 24px;
-    }
-}
-
-@media (max-width: 479px) {
-    .login__card {
+@media (max-width: 375px) {
+    .login-container {
         padding: 16px;
     }
+
+    .login__card {
+        padding: 24px 16px;
+        border-radius: 8px;
+    }
+
+    .login__card h2 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .login__card input,
+    .login__card button {
+        padding: 10px;
+        font-size: 15px;
+    }
 }
 
-.error{
+.error {
     color: red;
     margin-bottom: 16px;
 }
-/* .login-container{
-    align-items: center;
-    display: flex;
-    min-height: 90vh;
-    justify-content: center;
-}
-
-.login__card{
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 32px;
-    max-width: 400px;
-    width: 100%;
-}
-
-.login__card h2{
-    margin-bottom: 18px;
-    color: white;
-}
-
-.login__card input {
-    border-radius: 8px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    outline: none;
-    padding: 14px;
-    width: 100%;
-}
-
-.login__card input:active{
-    transform: translateY(2px);
-}
-
-.login__card button{
-    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
-    border-radius: 8px;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 14px;
-    width: 100%;
-    transition: 0.3s;
-}
-    
-.login__card button:hover{
-    opacity:0.9;
-}
- */
