@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router'
 import { useAuth } from '../context/AuthContext'
 import './Login.css'
@@ -24,28 +25,30 @@ function Login() {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
+    <div className='login-container'>
+        <div className='login__card'>
             <h2>Login</h2>
+                {error && <p className='error'>{error}</p>}
 
-            {error && <p style={{color: "red"}}>{error}</p>}
+            <form onSubmit={handleSubmit}>
+                <input
+                    type="text"
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                />
 
-            <input
-                type="text"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
-            />
+                <input
+                    type="password"
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                />
 
-            <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-            />
-
-            <button type="submit">Ingresar</button>
-        </form>
-        
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </div>    
     )
 }
 
