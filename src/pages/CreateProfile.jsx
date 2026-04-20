@@ -23,6 +23,7 @@ function CreateProfile() {
     const [projectsCompleted, setProjectsCompleted] = useState(0)
     const [repositories, setRepositories] = useState(0)
     const [englishLevel, setEnglishLevel] = useState("Básico")
+    const [newBio, setNewBio] = useState("")
 
     const handleImageUpload = (e) => {
         const file = e.target.files[0]
@@ -101,7 +102,8 @@ function CreateProfile() {
                 projects_completed: parseInt(projectsCompleted),
                 repositories: parseInt(repositories),
                 english_level: englishLevel
-            }
+            },
+            newBio
         )
 
         setNewName("")
@@ -117,6 +119,7 @@ function CreateProfile() {
         setProjectsCompleted(0)
         setRepositories(0)
         setEnglishLevel("Básico")
+        setNewBio("")
 
         alert("Desarrollador agregado exitosamente")
         navigate("/")
@@ -173,6 +176,30 @@ function CreateProfile() {
                                     />
                                 </div>
                             </div>
+                        </div>
+
+                        <div className="form-group full-width" style={{ marginTop: '20px' }}>
+                            <label htmlFor="bio">Resumen Profesional *</label>
+                            <textarea
+                                id="bio"
+                                placeholder="Escribe un resumen profesional impactante que aparecerá en tu CV..."
+                                value={newBio}
+                                onChange={e => setNewBio(e.target.value)}
+                                rows="4"
+                                required
+                                style={{
+                                    width: '100%',
+                                    padding: '12px',
+                                    borderRadius: '12px',
+                                    backgroundColor: 'rgba(30, 41, 59, 0.5)',
+                                    border: '1px solid rgba(255, 255, 255, 0.1)',
+                                    color: 'white',
+                                    fontSize: '1rem',
+                                    resize: 'vertical',
+                                    outline: 'none',
+                                    marginTop: '8px'
+                                }}
+                            />
                         </div>
                     </div>
 

@@ -6,7 +6,7 @@ const DevelopersContext = createContext()
 export function DevelopersProvider({ children }) {
     const [devs, setDevs] = useState(developers)
 
-    const addDeveloper = (name, role, techs, cv, avatar, metrics) => {
+    const addDeveloper = (name, role, techs, cv, avatar, metrics, bio) => {
         const nextId = devs.length > 0 ? Math.max(...devs.map(d => d.id)) + 1 : 1
         
         let techArray = Array.isArray(techs) 
@@ -22,7 +22,7 @@ export function DevelopersProvider({ children }) {
             role,
             tech: techArray,
             avatar: avatar || 'https://via.placeholder.com/80',
-            bio: '',
+            bio: bio || '',
             metrics: metrics || {
                 experience_years: 0,
                 projects_completed: 0,

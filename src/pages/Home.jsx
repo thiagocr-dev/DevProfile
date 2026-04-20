@@ -81,17 +81,18 @@ function Home({profiles}){
                 </div>
             </div>
             
-                <div className="cards-container">
-                    {filteredDevelopers.length > 0 ? (
-                        filteredDevelopers.map((dev) => (
-                            <DeveloperCard key={dev.id} developer={dev} />
-                        ))
-                    ) : (
-                        <p className="no-results">No se encontraron desarrolladores</p>
-                    )}
-                </div>
+            <div className="cards-container">
+                {filteredDevelopers.length > 0 ? (
+                    filteredDevelopers.map((dev) => (
+                        <DeveloperCard key={dev.id} developer={dev} />
+                    ))
+                ) : (
+                    <p className="no-results">No se encontraron desarrolladores</p>
+                )}
             </div>
+        </div>
     )
 }
 
 export default Home
+
