@@ -40,45 +40,47 @@ function Login() {
             <div className="bg-item cube-3"><HiOutlineCube /></div>
             <div className="bg-item cube-4"><HiOutlineCube /></div>
 
-            <div className='login__card'>
-                <h2 className="login-title">Login</h2>
-                <p className="login-subtitle">Inicia sesión para descubrir nuevos talentos y conectar con desarrolladores.</p>
-                
-                {error && <p className='error'>{error}</p>}
+            <div className="login-main">
+                <div className='login__card'>
+                    <h2 className="login-title">Login</h2>
+                    <p className="login-subtitle">Inicia sesión para descubrir nuevos talentos y conectar con desarrolladores.</p>
+                    
+                    {error && <p className='error'>{error}</p>}
 
-                <form onSubmit={handleSubmit} className="login-form">
-                    <div className="input-group">
-                        <FaUser className="input-icon" />
-                        <input
-                            type="text"
-                            placeholder="Username"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                            required
-                        />
-                    </div>
+                    <form onSubmit={handleSubmit} className="login-form">
+                        <div className="input-group">
+                            <FaUser className="input-icon" />
+                            <input
+                                type="text"
+                                placeholder="Username"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                required
+                            />
+                        </div>
 
-                    <div className="input-group">
-                        <FaLock className="input-icon" />
-                        <input
-                            type="password"
-                            placeholder="Password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                    </div>
+                        <div className="input-group">
+                            <FaLock className="input-icon" />
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                        </div>
 
-                    <button type="submit" className="login-button">Ingresar</button>
-                </form>
+                        <button type="submit" className="login-button">Ingresar</button>
+                    </form>
+                </div>
             </div>
 
             <footer className="login-footer">
                 <div className="footer-content">
-                    <p>Copyright © 2026 DevProfiles - Todos los derechos reservados</p>
+                    <p>Copyright © 2026 DevProfiles - Desarrollado por Thiago Russell</p>
                     <div className="footer-links">
-                        <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
-                        <a href="https://github.com" target="_blank" rel="noreferrer"><FaGithub /></a>
+                        <a href="https://www.linkedin.com/in/thiago-russell/" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+                        <a href="https://github.com/thiagocr-dev/" target="_blank" rel="noreferrer"><FaGithub /></a>
                     </div>
                 </div>
             </footer>

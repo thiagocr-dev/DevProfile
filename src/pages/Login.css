@@ -1,14 +1,20 @@
 .login-container {
-    min-height: 100%;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%);
     position: relative;
     overflow: hidden;
-    padding: 40px;
+}
+
+.login-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    z-index: 10;
 }
 
 /* Background Decorations */
@@ -83,6 +89,7 @@
     margin-bottom: 8px;
     background: linear-gradient(to right, #38bdf8, #818cf8);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -162,11 +169,10 @@
 
 /* Footer Section */
 .login-footer {
-    position: absolute;
-    bottom: 24px;
     width: 100%;
-    padding: 0 20px;
+    padding: 32px 20px;
     z-index: 10;
+    margin-top: auto;
 }
 
 .footer-content {

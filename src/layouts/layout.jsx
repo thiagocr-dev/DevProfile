@@ -12,7 +12,7 @@ function Screen() {
             {!isLoginPage && <Navbar/>}
 
             <div className="container"> 
-                <Sidebar />
+                {!isLoginPage && <Sidebar />}
 
                 <main className="main">
                     <Outlet />
