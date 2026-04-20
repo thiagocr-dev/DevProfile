@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router'
+import { useNavigate, useLocation } from 'react-router'
 import { useAuth } from '../context/AuthContext'
 import { FaUser, FaLock, FaLinkedin, FaGithub } from 'react-icons/fa'
 import { HiOutlineCube } from 'react-icons/hi'
@@ -9,6 +9,9 @@ function Login() {
 
     const { login } = useAuth()
     const navigate = useNavigate()
+    const location = useLocation()
+
+    const from = location.state?.from?.pathname || '/'
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -20,7 +23,7 @@ function Login() {
         const success = login(username, password)
 
         if (success) {
-            navigate('/')
+            navigate(from, { replace: true })
         } else {
             setError('Credenciales incorrectas')
         }
