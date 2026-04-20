@@ -77,8 +77,8 @@ src/
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone https://github.com/thiagocr-dev/DevProfile.git
-    cd devprofiles
+    git clone https://github.com/thiagocr-dev/DevProfiles.git
+    cd DevProfiles
     ```
 
 2.  **Instalar dependencias:**
