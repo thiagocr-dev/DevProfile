@@ -20,12 +20,15 @@ function DeveloperCardProfile({ developer }) {
 
     return (
         <div className="card__profile">
-            <img
-                src={developer.avatar}
-                alt={developer.name}
-                className="avatar"
-                onError={(e) => { e.target.onerror = null; e.target.src = "https://via.placeholder.com/80" }}
-            />
+            <div className="avatar-container">
+                <div className="avatar-glow"></div>
+                <img
+                    src={developer.avatar}
+                    alt={developer.name}
+                    className="avatar"
+                    onError={(e) => { e.target.onerror = null; e.target.src = "https://via.placeholder.com/80" }}
+                />
+            </div>
             <h3 className="name">{developer.name}</h3>
             <p className='role'>{developer.role}</p>
 

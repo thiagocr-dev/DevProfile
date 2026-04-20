@@ -10,17 +10,19 @@ function TechChart({tech}) {
             <h3>Stack Tecnológico</h3>
 
             {tech.map((item, index) => (
-                <div key={index} 
-                    className="tech-items">
-                    <span>{item.name} {item.level}%</span>
+                <div key={index} className="tech-group">
+                    <div className="tech-info">
+                        <span className="tech-name">{item.name}</span>
+                        <span className="tech-percentage">{item.level}%</span>
+                    </div>
                     
                     <div className="tech-level">
                         <div className='bar-fill'
-                            style={{width: `${item.level}%`}}>
+                            style={{ '--level': `${item.level}%` }}>
                         </div>
                     </div>
-        </div>
-        ))}
+                </div>
+            ))}
         </div>
     )
 }

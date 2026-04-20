@@ -1,80 +1,116 @@
-.card__profile{
-    background-color: #1e293b;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    padding: 18px;
+.card__profile {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    padding: 32px;
     text-align: center;
-    transition: all 0.2s ease;
-    flex: 1 1 300px;
-    max-width: none;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: unset;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
 }
 
-.card__profile:hover{
+.card__profile:hover {
     transform: translateY(-8px);
-    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(56, 189, 248, 0.3);
+    background: rgba(15, 23, 42, 0.8);
+    box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.7), 0 0 20px rgba(56, 189, 248, 0.1);
 }
 
-.avatar{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 2px;
-    object-fit: cover;
-}
-
-.name{
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.role{
-    font-weight: 600;
-    color: #94a3b8;
-}
-
-.tech-badges{
-    align-items: center;
+.avatar-container {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 24px;
     display: flex;
-    gap: 10px;
     justify-content: center;
-    margin: 22px 0;
+    align-items: center;
+}
+
+.avatar-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #38bdf8, #818cf8, #06b6d4);
+    animation: rotate-glow 4s linear infinite;
+    padding: 3px;
+    mask: radial-gradient(circle, transparent 65%, black 66%);
+    -webkit-mask: radial-gradient(circle, transparent 65%, black 66%);
+}
+
+@keyframes rotate-glow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    border: 4px solid rgba(15, 23, 42, 0.9);
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    background: linear-gradient(to right, #ffffff, #94a3b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role {
+    font-weight: 600;
+    color: #38bdf8;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 24px 0;
 }
 
 .cv-btn {
-    background: #06b6d4;
+    width: 100%;
+    background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
     color: white;
     border: none;
-    padding: 11px 26px;
-    border-radius: 6px;
-    font-weight: 600;
-    font-size: 14px;
+    padding: 14px 24px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 15px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.cv-btn--downloaded {
-    background: #10b981;
-    box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
-}
-
-.cv-btn--downloaded:hover {
-    background: #059669;
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    transition: all 0.3s;
+    box-shadow: 0 10px 15px -3px rgba(6, 182, 212, 0.3);
+    margin-top: 10px;
 }
 
 .cv-btn:hover {
-    background: #0891b2;
-    box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
     transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(6, 182, 212, 0.4);
+    filter: brightness(1.1);
+}
+
+.cv-btn--downloaded {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 10px 15px -3px rgba(16, 185, 129, 0.3);
 }
 
 .cv-btn:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }

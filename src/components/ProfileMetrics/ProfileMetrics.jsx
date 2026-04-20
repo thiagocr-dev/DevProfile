@@ -1,29 +1,46 @@
 import "./ProfileMetrics.css"
+import { FaBriefcase, FaCode, FaGithub, FaLanguage } from "react-icons/fa"
+import { HiOutlineChartBar } from "react-icons/hi"
 
 
 function ProfileMetrics({ developer }) {
     return (
         <div className="metrics__card">
-            <h3>Estadísticas</h3>
-
-            <div className='metric'>
-                <p>Años de experiencia</p>
-                <h3>+{developer.metrics.experience_years}</h3>
+            <div className="metrics-header">
+                <HiOutlineChartBar className="header-icon" />
+                <h3>Estadísticas</h3>
             </div>
 
-            <div className='metric'>
-                <p>Proyectos</p>
-                <h3>{developer.metrics.projects_completed}</h3>
+            <div className='metric-item'>
+                <div className="metric-info">
+                    <FaBriefcase className="metric-icon" />
+                    <p>Años de experiencia</p>
+                </div>
+                <h3 className="metric-value">+{developer.metrics.experience_years}</h3>
             </div>
 
-            <div className='metric'>
-                <p>Repositorios</p>
-                <h3>{developer.metrics.repositories}</h3>
+            <div className='metric-item'>
+                <div className="metric-info">
+                    <FaCode className="metric-icon" />
+                    <p>Proyectos finalizados</p>
+                </div>
+                <h3 className="metric-value">{developer.metrics.projects_completed}</h3>
             </div>
 
-            <div className='metric'>
-                <p>Nivel de ingles</p>
-                <h3>{developer.metrics.english_level}</h3>
+            <div className='metric-item'>
+                <div className="metric-info">
+                    <FaGithub className="metric-icon" />
+                    <p>Repositorios</p>
+                </div>
+                <h3 className="metric-value">{developer.metrics.repositories}</h3>
+            </div>
+
+            <div className='metric-item'>
+                <div className="metric-info">
+                    <FaLanguage className="metric-icon" />
+                    <p>Nivel de inglés</p>
+                </div>
+                <h3 className="metric-value">{developer.metrics.english_level}</h3>
             </div>
         </div>
     )
